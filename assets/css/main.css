@@ -1822,12 +1822,13 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		align-items: center;
 	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			display: inline-block;
+			display: flex;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
@@ -1951,7 +1952,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.avatar {
+		/* .image.avatar {
 			border-radius: 100%;
 		}
 
@@ -1962,7 +1963,7 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
-			}
+			} */
 
 /* List */
 
@@ -2014,7 +2015,8 @@ input, select, textarea {
 	}
 
 		ul.icons li {
-			display: inline-block;
+			display: flex;
+			justify-content: center;
 			padding: 0 1em 0 0;
 		}
 
@@ -2058,7 +2060,7 @@ input, select, textarea {
 			}
 
 /* Actions */
-
+/* 
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2126,9 +2128,9 @@ input, select, textarea {
 
 			ul.actions.fit.stacked {
 				width: 100%;
-			}
+			} */
 
-		@media screen and (max-width: 480px) {
+		/* @media screen and (max-width: 480px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -2177,11 +2179,11 @@ input, select, textarea {
 							margin-left: -0.5em;
 						}
 
-		}
+		} */
 
 /* Table */
 
-	.table-wrapper {
+	/* .table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
@@ -2245,7 +2247,7 @@ input, select, textarea {
 
 			table.alt tfoot {
 				border-top: 0;
-			}
+			} */
 
 /* Button */
 
@@ -2404,7 +2406,7 @@ input, select, textarea {
 		-moz-align-items: -moz-flex-end;
 		-webkit-align-items: -webkit-flex-end;
 		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
+		align-items: center;
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
@@ -2439,6 +2441,8 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
+			margin-right: 20px;
+			
 		}
 
 		#header strong, #header b {
@@ -2462,6 +2466,15 @@ input, select, textarea {
 		}
 
 /* Footer */
+
+	.footerDiv {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* #footer {
+		display: flex;
+	} */
 
 	#footer .icons {
 		margin: 1em 0 0 0;
@@ -3035,5 +3048,21 @@ input, select, textarea {
 				margin-left: 0;
 				padding-left: 0;
 			}
+	}
 
+	.headerDiv {
+		display: flex;
+		/* flex-direction: column; */
+		align-items: center;
+		text-align: center;
+	}
+
+	.badge-base LI-profile-badge {
+		align-items: center;
+		justify-content: center;
+		margin-left:30px ;
+	}
+
+	.badge-base__link LI-simple-link {
+		margin-left:30px ;
 	}
